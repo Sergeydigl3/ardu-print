@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kruk Serge, Suai, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+C:\codePack\kursach\GUI\flash\display\display.uvprojx
+Project File Date:  05/29/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling Main.c...
+user\Main.c(28): warning:  #177-D: variable "pic_width" was declared but never referenced
+                int pic_width = 128;
+user\Main.c(29): warning:  #177-D: variable "pic_height" was declared but never referenced
+                int pic_height = 64;
+user\Main.c(30): warning:  #177-D: variable "pic_height_page" was declared but never referenced
+                int pic_height_page = 8;
+user\Main.c(33): warning:  #550-D: variable "let" was set but never used
+      u32 let;
+user\Main.c(91): warning:  #177-D: variable "a" was declared but never referenced
+        uc8 a[7] = "Hello,";
+user\Main.c(92): warning:  #177-D: variable "b" was declared but never referenced
+        uc8 b[8] = "My Dog!";
+user\Main.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=1260 RO-data=240 RW-data=1032 ZI-data=1632  
+".\Objects\display.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDR1986BExx.1.3.0.pack
+                Keil::Device:Startup_MDR1986BE9x:1.3.0
+                Milandr MDR1986BExx Series Device Support, Drivers and Examples
+   * Component: Startup_MDR1986BE9x Version: 1.3.0
+   * Component: PORT Version: 1.3.0
+   * Component: RST_CLK Version: 1.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\codePack\kursach\GUI\flash\display\RTE
+  C:\codePack\kursach\GUI\flash\display\RTE\Device\MDR1986BE91
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Config
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Libraries\CMSIS\CM3\CoreSupport
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.3.0\Libraries\MDR32F9Qx_StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup_MDR1986BE9x:1.3.0
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c
+      Include file:  Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+      Source file:   Libraries\CMSIS\CM3\CoreSupport\core_cm3.c
+      Include file:  Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h
+      Include file:  Config\MDR32F9Qx_config.h
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s
+
+   * Component: Keil::Drivers:PORT:1.3.0
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_port.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_port.c
+
+   * Component: Keil::Drivers:RST_CLK:1.3.0
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_rst_clk.c
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h
+</pre>
+</body>
+</html>
